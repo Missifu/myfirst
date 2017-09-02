@@ -1,11 +1,51 @@
+    {% load staticfiles %}
     <html>
         <head>
             <title>Cecilia's blog</title>
-        </head>
-        <body>
-        <h1>El fruto de la frustración</h1> 
-<h2><strong><em>Una historia triste<em></strong></h2> 
-            <p>Que apareciera esto escrito fue difícil</p>
-            <p>pero funcionó!</p>
+        		</head>
+	        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	    	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	    	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Reenie+Beanie" rel="stylesheet"> 
+	    	<style type="text/css">
+	    		h1{
+        			color: white;
+        			font-family: 'Indie Flower';
+
+    			}
+    			h2{font-family: 'Indie Flower';
+    			color: white;
+    		}
+    			#page{
+    				width: 50%;
+    				padding: 80px;
+    				
+    				position:absolute;
+    				left:25%;
+    				top:20%;
+
+    				background-color: black;
+    			}
+    			body{
+    				background-color: darkgreen;
+    			}
+    			img{
+    				width: 200px;
+    				height: 200px;
+    			}
+    			.parrafo{
+    				color:white;
+    				font-family:'Reenie Beanie';
+    				font-size:14px;
+    			}
+	    	</style>
+	        <body>
+		<div id="page">
+        <h1><strong>El fruto de la frustración</strong></h1> 
+		<h2><strong><em>Una historia triste...<em></strong></h2> 
+            <p class="parrafo">El que pudiera aparecer esto fue difícil</p>
+            <p class="parrafo">pero funcionó!</p>
+            <img src="https://orig13.deviantart.net/9acb/f/2012/338/9/1/_render__chibi_miku_san_render_8_by_i_am_kayoy-d5n1ezn.png"/>
+        </div>
         </body>
     </html>
